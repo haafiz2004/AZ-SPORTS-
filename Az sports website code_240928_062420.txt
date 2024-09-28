@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Sports E-Commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333; /* سیاہ رنگ */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #categories {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #categories h2 {
+            margin: 0;
+        }
+
+        #categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #products {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .product {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 200px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333; /* سیاہ رنگ */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555; /* ہلکا سیاہ رنگ */
+        }
+
+        footer {
+            background-color: #333; /* سیاہ رنگ */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .review {
+            margin-top: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AZ Sports | اے زی سپورٹس</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home | ہوم</a></li>
+                <li><a href="#">Products | مصنوعات</a></li>
+                <li><a href="#">Categories | زمرے</a></li>
+                <li><a href="#">Contact | رابطہ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="categories">
+        <h2>Categories | زمرے</h2>
+        <ul>
+            <li><a href="#">Nike | نائیک</a></li>
+            <li><a href="#">Adidas | ایڈیڈاس</a></li>
+            <li><a href="#">Puma | پومہ</a></li>
+            <li><a href="#">Reebok | ریباک</a></li>
+            <li><a href="#">Cricket | کرکٹ</a></li>
+            <li><a href="#">Football | فٹ بال</a></li>
+            <li><a href="#">Track Suits | ٹریک سوٹس</a></li>
+        </ul>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products | نمایاں مصنوعات</h2>
+
+        <div class="product">
+            <img src="https://example.com/nike-shoe.jpg" alt="Nike Shoes">
+            <h3>Nike Air Max | نائیک ایئر میکس</h3>
+            <p>Price: $150 | قیمت: $150</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Stylish and comfortable! | سجیلا اور آرام دہ!</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://example.com/adidas-shoe.jpg" alt="Adidas Shoes">
+            <h3>Adidas Ultraboost | ایڈیڈاس الٹرا بوست</h3>
+            <p>Price: $180 | قیمت: $180</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Best running shoes ever! | بہترین دوڑنے کے جوتے!</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://example.com/puma-jacket.jpg" alt="Puma Jacket">
+            <h3>Puma Training Jacket | پومہ ٹریننگ جیکٹ</h3>
+            <p>Price: $75 | قیمت: $75</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Lightweight and breathable. | ہلکی اور سانس لینے والی۔</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://example.com/reebok-bag.jpg" alt="Reebok Bag">
+            <h3>Reebok Gym Bag | ریباک جیم بیگ</h3>
+            <p>Price: $40 | قیمت: $40</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Perfect for gym workouts! | جیم کی ورزش کے لیے بہترین!</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://example.com/football.jpg" alt="Football">
+            <h3>Nike Football | نائیک فٹ بال</h3>
+            <p>Price: $25 | قیمت: $25</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Great grip and durability. | بہترین گرفت اور پائیداری۔</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://example.com/cricket-bat.jpg" alt="Cricket Bat">
+            <h3>Adidas Cricket Bat | ایڈیڈاس کرکٹ بیٹ</h3>
+            <p>Price: $100 | قیمت: $100</p>
+            <button>Add to Cart | کارٹ میں شامل کریں</button>
+            <div class="review">
+                <strong>Reviews | جائزے:</strong>
+                <p>Excellent balance and control! | بہترین توازن اور کنٹرول!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AZ Sports | اے زی سپورٹس. All rights reserved. | تمام حقوق محفوظ ہیں.</p>
+    </footer>
+
+    <script>
+        // Simple add to cart functionality
+        document.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click", function() {
+                alert("Item added to cart! | آئٹم کارٹ میں شامل کر دیا گیا!");
+            });
+        });
+    </script>
+</body>
+</html>
